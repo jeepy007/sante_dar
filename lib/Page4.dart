@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sante_dart/Page2.dart';
 import 'package:sante_dart/Page3.dart';
 import 'package:sante_dart/Page1.dart';
+import 'package:sante_dart/Page4a.dart';
 
 class Page4 extends StatefulWidget {
   const Page4({Key? key}) : super(key: key);
@@ -24,15 +25,17 @@ class _Page4State extends State<Page4> {
           child: Column(
             children: [
               Container(
-                child: Column(
-                  children: [
-                    Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ud_nUQPJsyEUKaZVPliaSe9k-m5aC0m4dg&usqp=CAU"),
-                    Text("Dr Kelly Rolande"),
-                    Text("kellyrolande@yahoo.fr", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ud_nUQPJsyEUKaZVPliaSe9k-m5aC0m4dg&usqp=CAU"),
+                      Text("Dr Kelly Rolande"),
+                      Text("kellyrolande@yahoo.fr", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
+                    ],
+                  ),
                 ),
               ),
-              SizedBox(height: 10),
               Container(
                 height: 100,
                 width: 400,
@@ -128,7 +131,10 @@ class _Page4State extends State<Page4> {
                   children: [
                     Text("About", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                     SizedBox(width: 250),
-                    ElevatedButton(onPressed: (){},
+                    ElevatedButton(onPressed: (){
+                      Navigator . push (
+                        context , MaterialPageRoute ( builder : ( context ) => const Page4a ()), );
+                    },
                         child: Text("Call now"))
                   ],
                 ),
@@ -136,6 +142,43 @@ class _Page4State extends State<Page4> {
               SizedBox(height: 20),
               Text("Dr. Kelly Rolande is a long established fact that a reader will be distracted by the readable content of a pagewhen looking at its layout the point of using lorem."),
               SizedBox(height: 20),
+              SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 50,
+                    width: 90,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.blueGrey,
+                    ),
+                    child: Text("        585 \n      patients", style:  TextStyle(fontSize: 15),),
+                  ),
+                  SizedBox(width: 20),
+                  Container(
+                    height: 50,
+                    width: 90,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.lightGreen,
+                    ),
+                    child: Text("           8 \n      experiences",style: TextStyle(fontSize: 15),),
+                  ),
+                  SizedBox(width: 20),
+                  Container(
+                    height: 50,
+                    width: 90,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.deepOrangeAccent,
+                    ),
+                    child: Text("        1184 \n      surgery", style: TextStyle(fontSize:15 ),),
+                  ),
+                  SizedBox(width: 20),
+                ],
+              ),
+
             ],
           ),
         ),

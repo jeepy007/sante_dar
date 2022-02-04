@@ -19,7 +19,10 @@ class _Page1State extends State<Page1> {
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
         title: Text("Allo Doctors Africa", style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
-        leading: Icon(Icons.menu),
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: (){},
+        ),
       ),
 
       body: Padding(

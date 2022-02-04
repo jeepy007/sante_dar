@@ -15,6 +15,7 @@ class _Page3State extends State<Page3> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text("Dr Richard Max"),
         elevation: 0,
       ),
 
@@ -22,12 +23,15 @@ class _Page3State extends State<Page3> {
         child: Column(
           children: [
             Container(
-              child: Column(
-                children: [
-                  Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnlJILRHQj2ZH_iPsvh4zy4U_J9-FKfzY_Iw&usqp=CAU"),
-                  Text("Dr Jacobs Jones"),
-                  Text("jacobsjones@yahoo.fr", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
-                ],
+              child: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: Column(
+                  children: [
+                    Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrrY1574U5OmP_t2rO6c7prdspdvDed0C0BA&usqp=CAU"),
+                    Text("Dr Richard Max"),
+                    Text("richarsmax@yahoo.fr", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
+                  ],
+                ),
               ),
             ),
             SizedBox(height: 10),
@@ -134,6 +138,9 @@ class _Page3State extends State<Page3> {
             SizedBox(height: 20),
             Text("Dr. Richards Max is a long established fact that a reader will be distracted by the readable content of a pagewhen looking at its layout the point of using lorem."),
             SizedBox(height: 20),
+
+
+
 
           ],
         ),

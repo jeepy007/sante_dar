@@ -1,6 +1,7 @@
     import 'package:flutter/material.dart';
 import 'package:sante_dart/Page1.dart';
 import 'package:sante_dart/Page2.dart';
+import 'package:sante_dart/Page2a.dart';
 import 'package:sante_dart/Page3.dart';
 import 'package:sante_dart/Page4.dart';
 import 'package:sante_dart/splashscreen.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Page1(),
+      home: Page2a (),
     );
   }
 }

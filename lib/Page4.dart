@@ -15,6 +15,7 @@ class _Page4State extends State<Page4> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text("Dr Kelly Rolande"),
         elevation: 0,
       ),
       body: Center(
@@ -25,9 +26,9 @@ class _Page4State extends State<Page4> {
               Container(
                 child: Column(
                   children: [
-                    Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgU8vxCbS-oZVE_MZMeo-DF_msSyQnf_yyBw&usqp=CAU"),
-                    Text("Dr Jacobs Jones"),
-                    Text("jacobsjones@yahoo.fr", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
+                    Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ud_nUQPJsyEUKaZVPliaSe9k-m5aC0m4dg&usqp=CAU"),
+                    Text("Dr Kelly Rolande"),
+                    Text("kellyrolande@yahoo.fr", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
                   ],
                 ),
               ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sante_dart/Page2.dart';
 import 'package:sante_dart/Page3.dart';
+import 'package:sante_dart/Page4.dart';
 
 
 class Page1 extends StatefulWidget {
@@ -17,7 +18,7 @@ class _Page1State extends State<Page1> {
 
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: Text("Allo Doctors Africa"),
+        title: Text("Allo Doctors Africa", style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
         leading: Icon(Icons.menu),
       ),
 
@@ -37,14 +38,14 @@ class _Page1State extends State<Page1> {
                   ),
                   child:Row(
                     children: [
-                      Text("Search your doctor",style: TextStyle(fontSize: 15, color: Colors.black.withOpacity(0.5)),),
-                      SizedBox(width: 150),
-                      Icon(Icons.search),
+                      Text("Search your doctor",style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(0.5)),),
+                      SizedBox(width: 100),
+                      IconButton(onPressed: (){}, icon: Icon(Icons.search),)
                     ],
                   ),
                 ),
                 SizedBox(height: 10),
-                Text("Categories", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                Text("Spécialités", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
                 SizedBox(height: 20),
                 Container(
                   child: SingleChildScrollView(
@@ -60,7 +61,7 @@ class _Page1State extends State<Page1> {
                           child: Row(
                             children: [
                               Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpwOZdfCiwubTBgnvpLSNWiZpSqWRk13VGPA&usqp=CAU", height: 50),
-                              Text("Cardiologie"),
+                              Text("Cardiologie", style: TextStyle(fontSize: 20),),
                             ],
                           )
                         ),
@@ -74,7 +75,7 @@ class _Page1State extends State<Page1> {
                           child: Row(
                             children: [
                               Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNPB8H5uUj7Vcwhp_nOl2B8nz1kvMQqo9AIA&usqp=CAU", height: 50),
-                              Text(("Ophtamologie")),
+                              Text("Ophtamologie", style: TextStyle(fontSize: 20),),
                             ],
                           )
                         ),
@@ -88,7 +89,7 @@ class _Page1State extends State<Page1> {
                           child: Row(
                             children: [
                               Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcE1x4Ax7Kca6EG7awmwLhDKckCOipWNbhcg&usqp=CAU", height: 50),
-                              Text("Pulmonie")
+                              Text("Pulmonie", style: TextStyle(fontSize: 20),),
                             ],
                           )
                         ),
@@ -102,7 +103,7 @@ class _Page1State extends State<Page1> {
                           child:Row(
                             children: [
                               Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDb5z4nKu-0O72sVHo-EFHu6wiJwwa_OZo_w&usqp=CAU", height: 50),
-                              Text("Dentiste")
+                              Text("Dentiste", style: TextStyle(fontSize: 20),)
                             ],
                           )
                         ),
@@ -111,7 +112,7 @@ class _Page1State extends State<Page1> {
                   ),
                 ),
                 SizedBox(height: 10),
-                Text("Doctors",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                Text("Docteurs",style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
                 SizedBox(height: 20),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
@@ -128,8 +129,8 @@ class _Page1State extends State<Page1> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLNAvyH_FaF_Tr_1b-5qHZ4PiCptQMg1LP1w&usqp=CAU",height: 100,),
-                            Text("Dr Jacobs Jones"),
+                            Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVa3QidST0NR2WF0LCZjj_xqrsWIh7ApLzXQ&usqp=CAU",height: 100,),
+                            Text("Dr Jacobs Jones", style: TextStyle(fontSize: 20),),
                             Text("Cardiologue", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
                             ElevatedButton(onPressed: (){
                               Navigator . push (
@@ -152,8 +153,8 @@ class _Page1State extends State<Page1> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnlJILRHQj2ZH_iPsvh4zy4U_J9-FKfzY_Iw&usqp=CAU",height: 100,),
-                            Text("Dr Richard Max"),
+                            Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrrY1574U5OmP_t2rO6c7prdspdvDed0C0BA&usqp=CAU",height: 100,),
+                            Text("Dr Richard Max", style: TextStyle(fontSize: 20),),
                             Text("Ophtamologue", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
                             ElevatedButton(onPressed: (){
                               Navigator . push (
@@ -176,16 +177,89 @@ class _Page1State extends State<Page1> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgU8vxCbS-oZVE_MZMeo-DF_msSyQnf_yyBw&usqp=CAU",height: 100,),
-                            Text("Dr Kelly Rolande"),
+                            Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ud_nUQPJsyEUKaZVPliaSe9k-m5aC0m4dg&usqp=CAU",height: 100,),
+                            Text("Dr Kelly Rolande", style: TextStyle(fontSize: 20),),
                             Text("Dentiste", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
-                            ElevatedButton(onPressed: (){},
-                                child: Text("Contactez")),
+                            ElevatedButton(onPressed: (){
+                              Navigator . push (
+                                context , MaterialPageRoute ( builder : ( context ) => const Page4()), );
+                            },
+                                child: Text("Contactez")
+                            ),
 
                           ],
-
                         ),
+                      ),
+                      SizedBox(width: 20),
+                      Container(
+                        height: 200,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.deepPurple,
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KXiLrGSXDYPZmgHpR4boX0iJIP0A0SK2VA&usqp=CAU",height: 100,),
+                            Text("Dr Jennifer Lopez", style: TextStyle(fontSize: 20),),
+                            Text("Dentiste", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
+                            ElevatedButton(onPressed: (){
+                              Navigator . push (
+                                context , MaterialPageRoute ( builder : ( context ) => const Page4()), );
+                            },
+                                child: Text("Contactez")
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(width: 20),
+                      Container(
+                        height: 200,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.deepPurple,
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRqFGkZSGrfXjY8Nd2kt9zI1zFTvnH7bIqyQ&usqp=CAU",height: 100,),
+                            Text("Dr Martin Correa", style: TextStyle(fontSize: 20),),
+                            Text("Psychologue", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
+                            ElevatedButton(onPressed: (){
+                              Navigator . push (
+                                context , MaterialPageRoute ( builder : ( context ) => const Page4()), );
+                            },
+                                child: Text("Contactez")
+                            ),
 
+                          ],
+                        ),
+                      ),
+                      SizedBox(width: 20),
+                      Container(
+                        height: 200,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.deepPurple,
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcuzA6e3vcttPuuBBCCgldEMNrHGGRQXffuw&usqp=CAU",height: 100,),
+                            Text("Dr Henri Harper", style: TextStyle(fontSize: 20),),
+                            Text("Neuro-chirugien", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
+                            ElevatedButton(onPressed: (){
+                              Navigator . push (
+                                context , MaterialPageRoute ( builder : ( context ) => const Page4()), );
+                            },
+                                child: Text("Contactez")
+                            ),
+
+                          ],
+                        ),
                       ),
 
                     ],
@@ -194,7 +268,7 @@ class _Page1State extends State<Page1> {
                 SizedBox(height: 10),
                 Container(
                   child: Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPEjGMFUrnYh7xvjkLPqqeJsLAn_7ye8aMg&usqp=CAU",height: 180),
-                )
+                ),
               ],
             ),
           ),

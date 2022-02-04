@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sante_dart/Page2a.dart';
 
 class Page2 extends StatefulWidget {
   const Page2({Key? key}) : super(key: key);
@@ -12,6 +13,7 @@ class _Page2State extends State<Page2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text("Dr Jacobs Jones"),
         elevation: 0,
       ),
       
@@ -20,7 +22,7 @@ class _Page2State extends State<Page2> {
           children:[Container(
           child: Column(
             children: [
-              Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLNAvyH_FaF_Tr_1b-5qHZ4PiCptQMg1LP1w&usqp=CAU"),
+              Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVa3QidST0NR2WF0LCZjj_xqrsWIh7ApLzXQ&usqp=CAU"),
               Text("Dr Jacobs Jones"),
               Text("jacobsjones@yahoo.fr", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
             ],
@@ -28,8 +30,8 @@ class _Page2State extends State<Page2> {
         ),
             SizedBox(height: 10),
             Container(
-              height: 100,
-              width: 400,
+              height: 40,
+              width: 370,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(0.5),
               ),
@@ -122,7 +124,10 @@ class _Page2State extends State<Page2> {
                 children: [
                   Text("About", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                   SizedBox(width: 250),
-                  ElevatedButton(onPressed: (){},
+                  ElevatedButton(onPressed: (){
+                    Navigator . push (
+                      context , MaterialPageRoute ( builder : ( context ) => const Page2a ()), );
+                  },
                       child: Text("Call now"))
                 ],
               ),
@@ -133,42 +138,45 @@ class _Page2State extends State<Page2> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      height: 50,
-                      width: 90,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.blueGrey,
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 90,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.blueGrey,
+                        ),
+                        child: Text("       225 \n patients"),
                       ),
-                      child: Text("       225 \n patients"),
-                    ),
-                    SizedBox(width: 20),
-                    Container(
-                      height: 50,
-                      width: 90,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.lightGreen,
+                      SizedBox(width: 20),
+                      Container(
+                        height: 50,
+                        width: 90,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.lightGreen,
+                        ),
+                        child: Text("       6 \n experiences"),
                       ),
-                      child: Text("       6 \n experiences"),
-                    ),
-                    SizedBox(width: 20),
-                    Container(
-                      height: 50,
-                      width: 90,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.deepOrangeAccent,
+                      SizedBox(width: 20),
+                      Container(
+                        height: 50,
+                        width: 90,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.deepOrangeAccent,
+                        ),
+                        child: Text("       1084 \n      surgery"),
                       ),
-                      child: Text("       1084 \n      surgery"),
-                    ),
-                    SizedBox(width: 20),
+                      SizedBox(width: 20),
 
 
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),

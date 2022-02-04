@@ -45,7 +45,7 @@ class _Page4State extends State<Page4> {
                 child: Row(
                   children: [
                     Text("Shedule", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                    SizedBox(width: 250),
+                    SizedBox(width: 200),
                     Text("Archives", style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(0.5)),),
                   ],
                 ),
@@ -172,7 +172,7 @@ class _Page4State extends State<Page4> {
                       borderRadius: BorderRadius.circular(20),
                       color: Colors.lightGreen,
                     ),
-                    child: Text("           8 \n      experiences",style: TextStyle(fontSize: 15),),
+                    child: Text("           8 \n experiences",style: TextStyle(fontSize: 15),),
                   ),
                   SizedBox(width: 20),
                   Container(

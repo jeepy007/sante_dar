@@ -41,7 +41,7 @@ class _Page2State extends State<Page2> {
                 child: Row(
                   children: [
                     Text("Shedule", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                    SizedBox(width: 250),
+                    SizedBox(width: 200),
                     Text("Archives", style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(0.5)),),
                   ],
                 ),

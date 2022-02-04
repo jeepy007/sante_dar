@@ -32,7 +32,7 @@ class _Page3State extends State<Page3> {
                     children: [
                       Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrrY1574U5OmP_t2rO6c7prdspdvDed0C0BA&usqp=CAU"),
                       Text("Dr Richard Max"),
-                      Text("richarsmax@yahoo.fr", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
+                      Text("richardsmax@yahoo.fr", style: TextStyle(color: Colors.black.withOpacity(0.5)),),
                     ],
                   ),
                 ),
@@ -47,7 +47,7 @@ class _Page3State extends State<Page3> {
                 child: Row(
                   children: [
                     Text("Shedule", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                    SizedBox(width: 250),
+                    SizedBox(width: 200),
                     Text("Archives", style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(0.5)),),
                   ],
                 ),
@@ -163,7 +163,7 @@ class _Page3State extends State<Page3> {
                       borderRadius: BorderRadius.circular(20),
                       color: Colors.lightGreen,
                     ),
-                    child: Text("           5 \n      experiences",style: TextStyle(fontSize: 15),),
+                    child: Text("           5 \n  experiences",style: TextStyle(fontSize: 15),),
                   ),
                   SizedBox(width: 20),
                   Container(

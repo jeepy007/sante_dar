@@ -53,7 +53,7 @@ class _Page3aState extends State<Page3a> {
                       Text("Ecrire Message", style: TextStyle(fontSize: 30, color: Colors.deepPurple),),
                       TextFormField(
                         decoration: InputDecoration(
-                          hintText: 'Ex:Je souhaiterais avec un rdv pour une consultation',
+                          hintText: 'Ex:Je souhaiterais avoir un rdv pour une consultation',
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(0.0),
                             borderSide: BorderSide(

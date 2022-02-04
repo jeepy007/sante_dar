@@ -37,8 +37,8 @@ class _Page4State extends State<Page4> {
                 ),
               ),
               Container(
-                height: 100,
-                width: 400,
+                height: 60,
+                width: 350,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(0.5),
                 ),
@@ -51,12 +51,26 @@ class _Page4State extends State<Page4> {
                 ),
               ),
 
-              Container(
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(0.5),
+                            color: Colors.blue,
+
+                          ),
+                          child: Text("Today"),
+                        ),
+                      ),
+                      SizedBox(width: 20),
+                      Container(
                         height: 40,
                         width: 40,
                         decoration: BoxDecoration(
@@ -64,84 +78,79 @@ class _Page4State extends State<Page4> {
                           color: Colors.blue,
 
                         ),
-                        child: Text("Today"),
+                        child: Text("02 Fev"),
                       ),
-                    ),
-                    SizedBox(width: 20),
-                    Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(0.5),
-                        color: Colors.blue,
+                      SizedBox(width: 20),
+                      Container(
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(0.5),
+                          color: Colors.blue,
 
+                        ),
+                        child: Text("03 FEV"),
                       ),
-                      child: Text("02 Fev"),
-                    ),
-                    SizedBox(width: 20),
-                    Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(0.5),
-                        color: Colors.blue,
+                      SizedBox(width: 20),
+                      Container(
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(0.5),
+                          color: Colors.blue,
 
+                        ),
+                        child: Text("04 Fev"),
                       ),
-                      child: Text("03 FEV"),
-                    ),
-                    SizedBox(width: 20),
-                    Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(0.5),
-                        color: Colors.blue,
+                      SizedBox(width: 20),
+                      Container(
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(0.5),
+                          color: Colors.blue,
 
+                        ),
+                        child: Text("05 Fev"),
                       ),
-                      child: Text("04 Fev"),
-                    ),
-                    SizedBox(width: 20),
-                    Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(0.5),
-                        color: Colors.blue,
+                      SizedBox(width: 20),
+                      Container(
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(0.5),
+                          color: Colors.blue,
 
+                        ),
+                        child: Text("06 Fev"),
                       ),
-                      child: Text("05 Fev"),
-                    ),
-                    SizedBox(width: 20),
-                    Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(0.5),
-                        color: Colors.blue,
-
-                      ),
-                      child: Text("06 Fev"),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               SizedBox(height: 20),
-              Container(
-                child: Row(
-                  children: [
-                    Text("About", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                    SizedBox(width: 250),
-                    ElevatedButton(onPressed: (){
-                      Navigator . push (
-                        context , MaterialPageRoute ( builder : ( context ) => const Page4a ()), );
-                    },
-                        child: Text("Call now"))
-                  ],
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  child: Row(
+                    children: [
+                      Text("About", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                      SizedBox(width: 250),
+                      ElevatedButton(onPressed: (){
+                        Navigator . push (
+                          context , MaterialPageRoute ( builder : ( context ) => const Page4a ()), );
+                      },
+                          child: Text("Call now"))
+                    ],
+                  ),
                 ),
               ),
-              SizedBox(height: 20),
-              Text("Dr. Kelly Rolande is a long established fact that a reader will be distracted by the readable content of a pagewhen looking at its layout the point of using lorem."),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                    child: Text("Dr. Kelly Rolande is a long established fact that a reader will be distracted by the readable content of a pagewhen looking at its layout the point of using lorem.")),
+              ),
               SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

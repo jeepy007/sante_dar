@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sante_dart/Page2a.dart';
 
+
 class Page2 extends StatefulWidget {
   const Page2({Key? key}) : super(key: key);
 

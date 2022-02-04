@@ -127,7 +127,6 @@ class _Page3State extends State<Page3> {
                   ],
                 ),
               ),
-              SizedBox(height: 20),
               Container(
                 child: Row(
                   children: [

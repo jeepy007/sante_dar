@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sante_dart/Page2.dart';
+import 'package:sante_dart/Page3a.dart';
 
 
 
@@ -130,7 +131,10 @@ class _Page3State extends State<Page3> {
                 children: [
                   Text("About", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                   SizedBox(width: 250),
-                  ElevatedButton(onPressed: (){},
+                  ElevatedButton(onPressed: (){
+                    Navigator . push (
+                      context , MaterialPageRoute ( builder : ( context ) => const Page3a ()), );
+                  },
                       child: Text("Call now"))
                 ],
               ),
@@ -138,6 +142,41 @@ class _Page3State extends State<Page3> {
             SizedBox(height: 20),
             Text("Dr. Richards Max is a long established fact that a reader will be distracted by the readable content of a pagewhen looking at its layout the point of using lorem."),
             SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 50,
+                  width: 90,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.blueGrey,
+                  ),
+                  child: Text("           185 \n      patients", style:  TextStyle(fontSize: 15),),
+                ),
+                SizedBox(width: 20),
+                Container(
+                  height: 50,
+                  width: 90,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.lightGreen,
+                  ),
+                  child: Text("           5 \n      experiences",style: TextStyle(fontSize: 15),),
+                ),
+                SizedBox(width: 20),
+                Container(
+                  height: 50,
+                  width: 90,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.deepOrangeAccent,
+                  ),
+                  child: Text("        884 \n      surgery", style: TextStyle(fontSize:15 ),),
+                ),
+                SizedBox(width: 20),
+              ],
+            ),
 
 
 

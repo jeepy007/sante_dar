@@ -173,8 +173,6 @@ class _Page2State extends State<Page2> {
                         child: Text("       1084 \n      surgery"),
                       ),
                       SizedBox(width: 20),
-
-
                     ],
                   ),
                 ),
